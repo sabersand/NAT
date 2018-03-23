@@ -7,11 +7,11 @@ class MyTopo(Topo):
 
         Topo.__init__(self)
 
-        host1 = self.addHost(name = 'host1',ip = '192.168.0.1/24')
-        host2 = self.addHost(name = 'host2',ip = '192.168.0.2/24')
-        host3 = self.addHost(name = 'host3',ip = '192.168.0.3/24')
+        host1 = self.addHost(name = 'host1',ip = '192.168.0.1/16')
+        host2 = self.addHost(name = 'host2',ip = '192.168.0.2/16')
+        host3 = self.addHost(name = 'host3',ip = '192.168.0.3/16')
 
-        server1 = self.addHost(name = 'server1', ip = '192.168.1.1/24')
+        server1 = self.addHost(name = 'server1', ip = '192.168.1.1/16')
 
         switch1 = self.addSwitch('s1')
         router1 = self.addSwitch('r2')
